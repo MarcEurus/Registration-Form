@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-header">
+            <h2>Registration Form</h2>
+        </div>
+
+        <form id="regForm">
+            
+            <div class="form-row">
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-user"></i></span>
+                    <input type="text" id="firstName" placeholder="First Name*" autocomplete="given-name">
+                </div>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-user"></i></span>
+                    <input type="text" id="lastName" placeholder="Last Name*" autocomplete="family-name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-user"></i></span>
+                    <input type="text" id="username" placeholder="Username" autocomplete="username">
+                </div>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-phone"></i></span>
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" autocomplete="tel">
+                </div>
+            </div>
+
+            <div class="form-row single-col">
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" placeholder="E-Mail Address*" autocomplete="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <select id="gender" autocomplete="sex">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-calendar-alt"></i></span>
+                    <input 
+                        type="text" 
+                        id="dob" 
+                        placeholder="Date of Birth" 
+                        onfocus="(this.type='date')" 
+                        onblur="(this.value ? this.type='date' : this.type='text')" 
+                        autocomplete="bday"
+                    >
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <select id="country" autocomplete="country-name">
+                        <option value="" disabled selected>Country</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ph">Philippines</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="company" placeholder="Your Company's Name" autocomplete="organization">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <span class="input-icon top-align"><i class="fas fa-map-marker-alt"></i></span>
+                    <textarea id="homeAddress" placeholder="Home Address" autocomplete="street-address"></textarea>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon top-align"><i class="fas fa-map-marker-alt"></i></span>
+                    <textarea id="officeAddress" placeholder="Office Address" autocomplete="work street-address"></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="password" placeholder="Password*" autocomplete="new-password">
+                </div>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" autocomplete="new-password">
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="terms"> I agree with the terms & conditions.
+                </label>
+            </div>
+
+            <button type="submit" class="btn-register">Register</button>
+
+            <div class="form-footer">
+                <p>Already have an account? <a href="#">Login</a></p>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
