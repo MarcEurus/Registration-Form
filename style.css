@@ -1,5 +1,6 @@
 :root {
-    --background-color: #2e3047;
+    --gradient-start: #2e3047;
+    --gradient-end: #1a1b29;
     --container-color: #3c3f58;
     --primary-color: #3bba9c; 
     --primary-hover: #2a9d82;
@@ -15,7 +16,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     display: flex;
     justify-content: center;
     align-items: center;
